@@ -1,0 +1,49 @@
+PROJECT: Lightweight Edge AI System for Crop Leaf Disease Classification
+
+Dataset:
+PlantVillage
+
+Number of classes:
+38
+
+Training images:
+43,444
+
+Validation images:
+10,861
+
+Base architecture:
+MobileNetV2
+
+Input size:
+224 × 224 × 3
+
+Fine-tuning:
+Last 30 MobileNetV2 layers
+
+Fine-tuned validation accuracy:
+96.05%
+
+Fine-tuned macro F1:
+95.03%
+
+Float32 TFLite model:
+8.63 MB
+
+INT8 TFLite model:
+2.63 MB
+
+INT8 validation accuracy:
+94.25%
+
+INT8 macro F1:
+92.76%
+
+Quantization accuracy loss:
+1.80 percentage points
+
+Deployment target:
+STM32-H533RE-based edge system
+
+Current inference demonstration:
+Laptop webcam
